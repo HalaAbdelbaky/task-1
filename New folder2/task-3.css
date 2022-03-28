@@ -1,0 +1,469 @@
+/*.general..............................................*/
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'varela round' , sans-serif;
+}          
+body{
+        height:6000px;
+        text-align: center;
+} 
+/*.common........................................................*/
+button{
+        height:45px;
+        width: 140px;
+        border-radius:6px;
+        font-size: 22px;
+        cursor: pointer;
+}  
+.line{
+        display: block;
+        width:90px;
+        height:3px;
+        margin: 0  auto 30px auto ;
+}
+.line ,  .footer li{
+        background-color: rgb(45, 0, 248);  
+}
+.cont{
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+        margin: 10px auto;
+}
+a{
+        text-decoration: none;
+}
+.paragraph{
+        color: rgb(177, 172, 172); ;
+}
+.home ul ,.welcome-box3 ,.choose2 ,.cv2 ,.icons{
+        float:right;
+}
+.img-logo ,.welcome-box1,.welcome-box2 ,.welcome-box3 ,.picture ,.offer ,.offers i ,.offers .data ,.choose1 ,.price ,.mo
+,.cv1,.player ,.article-figure
+{
+        float: left; 
+}
+.welcome-box1,.welcome-box2 ,.welcome-box3 ,.offer ,.summary ,.price ,.square{
+        border:1px solid rgb(45, 0, 248); 
+}
+.price:hover .p2 ,.welcome i,.welcome a ,.offers i, .summary i ,.square ,.cv p{
+        color: rgb(45, 0, 248);
+}
+.team-layer, .player:hover .team-layer,.picture-layer ,.article-figure:after ,.header ,.pictures ,.choose ,.offers ,.team{
+        width:100%;
+}
+.welcome-box1:hover,.welcome-box2:hover ,.welcome-box3:hover, .offer:hover ,.player:hover h3 ,.price:hover .circle ,.price:hover .square,
+.home-main p, .home-main h1 ,.home-button ,.work h3 ,.ico i ,.cv ,.icons i{
+        color: white;
+}
+/*.hover.....................................................*/
+.welcome-box1:hover:after,.welcome-box2:hover:after,.welcome-box3:hover:after, .offer:hover:after{
+        transition: .5s;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+}
+.welcome-box1:hover .paragraph ,.welcome-box2:hover .paragraph ,.welcome-box3:hover  .paragraph,.offer:hover .paragraph
+{
+        color: rgb(177, 172, 172);
+}
+/*....................................*/
+.picture-layer ,.team-layer{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .6);
+        opacity:0;
+        visibility:hidden;
+        transition: all .5s;
+}
+.picture:hover .picture-layer ,.player:hover .team-layer {
+        opacity:1;
+        visibility:visible;
+}
+/*.....................................*/
+.price:hover .circle ,.price:hover .square ,.price:hover{
+        background-color: #221f1f;
+        transition: all .5s;
+}
+/*.......................................*/
+.player:hover span{
+        color: #1877F2;
+}
+.team-layer{
+        height:0;
+}
+.player:hover .team-layer,.picture-layer {
+        height:100%;
+}
+/*......................................*/
+.article-figure:after{
+        position: absolute;
+        content: "";
+        height:0;
+        top:0;
+        left: 0;
+        transition: all .5s;
+}
+.article-figure:hover:after{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+}
+/*............................................*/
+.home-button2:hover{
+         background-color: rgb(44, 44, 212);
+}
+.home-button1:hover{
+        background-color: rgba(248, 248, 248, 0.836);
+}
+/*...........................................*/
+.footer li:hover{
+        background-color:rgb(57, 26, 197)
+}
+/*. home...................................................................*/
+.home{
+        position: relative;
+        height:870px;
+        background-image: url(images2/back.jpeg);
+    }
+.home:after{
+        position: absolute;
+        top:0;
+        left: 0;
+        content: "";
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        height: 100%;
+    }
+.home-nav{
+        width:80%;
+        height:44px;
+        margin: 0 10%;
+    }
+.home ul{
+        height:44px;
+        line-height:44px ;
+}
+.home ul li{ 
+        display: inline;
+        list-style-type:none;
+        font-size:21px;
+        padding-left: 8px;
+        padding-right: 8px;
+}
+.img-logo{ 
+        width:40px;
+        height:44px;
+}
+.header{
+        position: fixed;
+        top: 0;
+        height:45px;
+        margin-top: 0px;
+        z-index: 100;
+        background:rgba(105, 102, 102, 0.9);
+}
+.home-main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 65%;
+        line-height:50px;
+        z-index: 1;
+} 
+.home-main h1{ 
+        font-weight: bold;
+        font-size: 55px;
+}
+.home-button2{
+        background-color: blue;
+}  
+/*.welcome...............................................................*/
+.welcome{
+        height:600px;
+        text-align: center;
+}
+.welcome-cont{
+        width: 80%;
+        margin: 15% auto;
+}
+.welcome-box1,.welcome-box2 ,.welcome-box3{
+        position: relative;
+        height:200px ;
+        width: 30%;
+        padding-top:25px;
+        padding-bottom:25px;
+        line-height:30px;
+}
+.welcome-box2{
+        margin: 0 5%;
+}
+.welcome a{
+        font-size: 14px;}
+.welcome-box1:after,.welcome-box2:after,.welcome-box3:after,.offer:after{
+        position: absolute;
+        top:0;
+        left: 0;
+        content: "";
+        width:0;
+}
+   /*.pictures...................................................................*/
+.pictures{
+        position:relative;
+        height:800px ;
+        background-color: rgb(0, 0, 0,.1);
+ }
+.picture img{
+        width: 80%;
+        height:100%;
+}
+.picture{
+        position: relative;
+        background-color: #fff;
+        margin:1.5%;
+        width: 30%;
+        height:40%;
+}
+.work{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+}
+.work span, .divf:hover span{
+        color: #1877F2;
+        text-transform: uppercase;
+}
+.ico i{
+        margin:20px auto;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #1877F2;
+ }
+/*.offers...................................................................*/
+.offers{
+        height:600px;
+        padding: 5%;
+ }
+.offer{
+        position: relative;
+        width: 30%;
+        height: 40%;
+        margin: 1.5%;
+        line-height:1.8em;
+        padding:2%;
+}
+.offers i{
+        margin-right:12px;
+        font-size:35px;
+}
+.offers .data{
+        text-align: justify;
+}
+/*.choose..................................................................................*/
+.choose{
+        position: relative;
+        overflow: hidden;
+        margin:40px 0 0;
+        height:700px;
+        background-color: rgb(0, 0, 0,.1);
+}
+.choose1{
+        text-align: justify;
+        width:40%;
+        height:100%;
+        margin:50px 0;
+}
+ .choose1 ul i{
+        border: 1px solid #6195ff;
+        color: #6195ff;
+        padding: 3px;
+        border-radius: 50%;
+        width:30px;
+        height:30px;
+}
+.choose1{
+        line-height:50px;
+}
+.choose1 p, .choose2 ul{
+        color:rgb(0, 0, 0,.7); ;
+}
+.choose2{
+        margin:50px 0;
+        text-align: center;
+}
+.choose2 img{
+        height:70%;
+        width:100%;
+} 
+.choose2 ul li{
+        width:12px;
+        height:12px;
+        margin:7px;
+        display: inline-block;
+        background-color: #a8a8a8;
+        border-radius:100%;
+}
+.choose2 ul li:hover{
+        background-color: #1877F2;
+}
+.choose .line{
+        display: inline-block;
+}
+/*.summary...................................................................................................................*/
+.summary span{
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+}
+.summary{ 
+        background: url("images2/bird.jpg");
+        background-size:contain;
+        background-attachment: fixed;
+        height:320px;
+}
+.summary .cont {
+        height: 100px ;
+        margin: 100px auto ;
+        color: #fff;
+}
+/*.pricing......................................................*/
+.pricing{
+        height: 700px;
+}
+.price{
+        width:30%;
+        height:70%;
+        margin:1.5%;
+        color: rgb(177, 172, 172);
+        padding-top:20px;
+        padding-bottom:20px;
+        line-height:60px;
+}
+.circle {
+        color: black;
+        width:130px;
+        height:130px;
+        z-index: -1;
+        border-radius:50%  ;
+        border-color: rgb(45, 0, 248);
+}
+.square{
+        width:180px;
+}
+/*.cv............................................................................*/
+.mo{
+        height:60px;
+        width:60px;
+        border-radius: 50%;
+}
+.cv{
+        background-image: url("images2/rose.jpg");
+        height:380px;
+        background-attachment: fixed;
+        padding-top:100px;
+        padding-bottom: 100px;
+} 
+.cv1 ,.cv2{
+        width: 50%;
+        text-align: justify;
+}
+/*.team.....................................................*/
+.team{
+        height:700px;
+        padding: 5%;
+}
+.player{
+        position: relative;
+        width:30%;
+        height:60%;
+        padding:1%;
+        margin:1.65%;
+        background-color:rgb(202, 202, 202);
+}
+.imgf1,.imgf2,.imgf3{
+        width:70%;
+        height:70%;
+}
+.icons i{
+        padding:10px;
+        display:block;
+}
+.icons{
+        height:30%;
+        width:10%;
+        background-color: #1877F2;
+}
+/*. article...........................................................*/
+.salah{
+        height:250px ;
+        width:300px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top:50px;
+}
+   .article{
+        height:700px;
+}
+.article-figure{
+        position: relative;
+        width: 30%;
+        height:80%;
+        margin: 1.65%;
+        text-align: justify;
+        line-height:30px;
+}
+.article-figure ul i{
+        color: #1877F2;
+}
+.article-figure ul{
+        list-style-type: none;
+        text-align: left;
+        margin: 20px 0;
+}
+.article-figure ul li{
+        display: inline;
+        padding: 0 5px;
+}
+.article p{
+        color: rgb(177, 172, 172)
+}
+/*.footer....................................................*/
+.footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        line-height: 50px;
+        background-color: gray;
+}
+.sea{
+        margin: auto;
+        display: block;
+        height:200px;
+        width:200px;
+}
+.footer ul{ 
+       list-style-type: none;
+}
+.footer li{
+        display: inline-block;
+        height:40px;
+        width:40px;
+        border-radius:50%;
+        margin:4px;
+}
+.footer i{
+        line-height: 40px;
+        color: #fff;
+}
+
+
+
